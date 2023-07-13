@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1></h1>
+  
+  <select id="dropdown">
+    <option value="">Test</option>
+  </select>
+  
+  <script>
+    // Function to read data from CSV file
+    function readCSV(file, callback) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          callback(xhr.responseText);
+        }
+      };
+      xhr.open("GET", file, true);
+      xhr.send();
+    }
+    
+    // Function to populate dropdown with CSV data
+    function populateDropdown(csvData) {
+      var lines = csvData.split("\n");
+      var dropdown = document.getElementById("dropdown");
+      
+      for (var i = 0; i < lines.length; i++) {
+        var option = document.createElement("option");
+        option.value = lines[i];
+        option.text = lines[i];
+        dropdown.appendChild(option);
+      }
+    }
+    
+    // Specify the path to your CSV file
+    var csvFile = "./test.csv";
+    
+    // Read the CSV file and populate the dropdown
+    readCSV(csvFile, populateDropdown);
+  </script>
+</body>
+</html>
