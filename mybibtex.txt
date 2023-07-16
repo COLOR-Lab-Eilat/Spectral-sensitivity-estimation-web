@@ -1,0 +1,7 @@
+@inproceedings{Solomatov2023spectral,
+author = {Grigory Solomatov and Derya Akkaynak},
+title = {Spectral Sensitivity Estimation Without a Camera},
+booktitle = {IEEE International Conference on Computational Photography (ICCP)},
+year = {2023},
+month = {July}
+}
