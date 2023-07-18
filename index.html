@@ -392,7 +392,10 @@
   dropdownMark.addEventListener('change', function() {
     const selectedValue = dropdownMark.value;
     var csvLink = document.getElementById("csvLink");
+
+    console.log('outside!!!')
     if(selectedValue != ''){ //&& selectedValue !='NA'
+      console.log('inside!!!')
       const filteredValues = data
       .filter(row => row[1] === dropdownModel.value)
       .filter(row => row[2] === selectedValue)
