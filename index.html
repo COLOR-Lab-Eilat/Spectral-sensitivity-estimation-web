@@ -322,6 +322,9 @@
       <select id="dropdownMark">
       </select>
     </td>
+	<td></td>
+    	<td><button type="button">Click Me!</button>
+  	</tr>
      <td></td>
     <td><a id="csvLink" style="display: none;">Link to CSV file</a>
   </tr>
@@ -389,7 +392,7 @@
     populateDropdown(dropdownMark, uniqueModelValues);
   });
 
-  dropdownMark.addEventListener('click', function() {
+  dropdownMark.addEventListener('change', function() {
     const selectedValue = dropdownMark.value;
     var csvLink = document.getElementById("csvLink");
 
