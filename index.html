@@ -323,10 +323,9 @@
       </select>
     </td>
 	<td></td>
-    	<td><button type="button">Click Me!</button>
-  	</tr>
+    	<td><button id="csvButton" type="button">Click Me!</button></td>
      <td></td>
-    <td><a id="csvLink" style="display: none;">Link to CSV file</a>
+    <td><a id="csvLink" style="display: none;">Link to CSV file</a></td>
   </tr>
 </table>
   
@@ -366,6 +365,7 @@
   const dropdownManufacturer = document.getElementById("dropdownManufacturer");
   const dropdownModel = document.getElementById("dropdownModel");
   const dropdownMark = document.getElementById("dropdownMark");
+  const csvButton = document.getElementById("csvButton");
 
   loadCSV('./cleaned_for_website.csv', function(csv) {
   const data = parseCSV(csv);
@@ -393,6 +393,28 @@
   });
 
   dropdownMark.addEventListener('change', function() {
+    const selectedValue = dropdownMark.value;
+    var csvLink = document.getElementById("csvLink");
+
+    console.log('outside!!!')
+    if(selectedValue != ''){ //&& selectedValue !='NA'
+      console.log('inside!!!')
+      const filteredValues = data
+      .filter(row => row[1] === dropdownModel.value)
+      .filter(row => row[2] === selectedValue)
+      .map(row => row[3]);
+      const linkValues = [...new Set(filteredValues)];
+      csvLink.href = linkValues[0];
+      if(linkValues[0] != ''){
+        csvLink.style.display = "inline";
+      }
+    }
+    else{
+      csvLink.style.display = "none";
+    }
+  });
+
+  csvButton.addEventListener('click', function() {
     const selectedValue = dropdownMark.value;
     var csvLink = document.getElementById("csvLink");
 
