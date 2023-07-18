@@ -374,7 +374,7 @@
   const uniqueValues = [...new Set(firstColumn)];
   populateDropdown(dropdownManufacturer, uniqueValues);
 
-  dropdownManufacturer.addEventListener('change', function() {
+  dropdownManufacturer.addEventListener('click', function() {
     const selectedValue = dropdownManufacturer.value;
     const filteredValues = data
       .filter(row => row[0] === selectedValue)
@@ -383,7 +383,7 @@
     populateDropdown(dropdownModel, uniqueManufacturerValues);
   });
 
-  dropdownModel.addEventListener('change', function() {
+  dropdownModel.addEventListener('click', function() {
     const selectedValue = dropdownModel.value;
     const filteredValues = data
       .filter(row => row[1] === selectedValue)
