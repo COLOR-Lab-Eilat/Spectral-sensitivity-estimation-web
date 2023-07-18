@@ -392,27 +392,27 @@
     populateDropdown(dropdownMark, uniqueModelValues);
   });
 
-  dropdownMark.addEventListener('change', function() {
-    const selectedValue = dropdownMark.value;
-    var csvLink = document.getElementById("csvLink");
+  //dropdownMark.addEventListener('change', function() {
+    //const selectedValue = dropdownMark.value;
+    //var csvLink = document.getElementById("csvLink");
 
-    console.log('outside!!!')
-    if(selectedValue != ''){ //&& selectedValue !='NA'
-      console.log('inside!!!')
-      const filteredValues = data
-      .filter(row => row[1] === dropdownModel.value)
-      .filter(row => row[2] === selectedValue)
-      .map(row => row[3]);
-      const linkValues = [...new Set(filteredValues)];
-      csvLink.href = linkValues[0];
-      if(linkValues[0] != ''){
-        csvLink.style.display = "inline";
-      }
-    }
-    else{
-      csvLink.style.display = "none";
-    }
-  });
+    //console.log('outside!!!')
+    //if(selectedValue != ''){ //&& selectedValue !='NA'
+      //console.log('inside!!!')
+      //const filteredValues = data
+      //.filter(row => row[1] === dropdownModel.value)
+      //.filter(row => row[2] === selectedValue)
+      //.map(row => row[3]);
+      //const linkValues = [...new Set(filteredValues)];
+      //csvLink.href = linkValues[0];
+      //if(linkValues[0] != ''){
+        //csvLink.style.display = "inline";
+      //}
+    //}
+    //else{
+      //csvLink.style.display = "none";
+    //}
+  //});
 
   csvButton.addEventListener('click', function() {
     const selectedValue = dropdownMark.value;
