@@ -295,6 +295,9 @@
       <div class="image-caption">
   </div>
 
+
+<!DOCTYPE html>
+<html>
 <head>
   <title></title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -326,9 +329,7 @@
   </tr>
 </table>
 <canvas id="myChart"></canvas>
-  
-  <script>
-    
+<script>
    function loadCSV(file, callback) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -349,14 +350,6 @@
     const data = lines.slice(1).map(line => line.split(','));
     return data;
   }
-
-
-
-
-
-
-
-
 
   function parseCSVForGraph(csv) {
   const lines = csv.split("\n");
@@ -419,14 +412,6 @@ function createGraph(data) {
   });
 }
 
-
-
-
-
-
-
-
-
   function populateDropdown(dropdown, options) {
     dropdown.innerHTML = '';
     options.forEach(option => {
@@ -469,7 +454,7 @@ function createGraph(data) {
   dropdownMark.addEventListener('change', function() {
     const selectedValue = dropdownMark.value;
     var csvLink = document.getElementById("csvLink");
-    if(selectedValue != ''){ 
+    if(selectedValue != ''){
       const filteredValues = data
       .filter(row => row[1] === dropdownModel.value)
       .filter(row => row[2] === selectedValue)
@@ -478,12 +463,10 @@ function createGraph(data) {
       csvLink.href = linkValues[0];
       if(linkValues[0] != ''){
         csvLink.style.display = "inline";
-      if(linkValues[0] != ''){
-        csvLink.style.display = "inline";
       if(linkValues[0].indexOf(".csv") == -1){
         linkValues[0] = linkValues[0] + ".csv";
       }
-      	loadCSV(linkValues[0], function(csv) {
+        loadCSV(linkValues[0], function(csv) {
         const GraphData = parseCSVForGraph(csv);
         createGraph(GraphData);
        });
@@ -498,10 +481,18 @@ function createGraph(data) {
   });
     
 });
-   
 
 </script>
 </body>
+</html>	    
+
+ 
+
+
+  
+
+
+	    
 
 
 
