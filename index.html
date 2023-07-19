@@ -469,52 +469,52 @@ function createGraph(data) {
     const uniqueModelValues = [...new Set(filteredValues)];
     populateDropdown(dropdownMark, uniqueModelValues);
   });
-
+	  
+  const folderNames = ['predictions/', 'predictions2/'];
+	  
   dropdownMark.addEventListener('change', function() {
-  	const selectedValue = dropdownMark.value;
+	const selectedValue = dropdownMark.value;
   	const csvLink = document.getElementById("csvLink");
 
   	function loadCSVFromFolders(index, filePath) {
-    	if (index >= folderNames.length) {
-      	// File not found in any folder
-      		csvLink.style.display = "none";
-      		console.error('File not found in any folder.');
-      		return;
-    	}
+		if (index >= folderNames.length) {
+			csvLink.style.display = "none";
+			console.error('File not found in any folder.');
+			return;
+    		}
 
-    	const folderName = folderNames[index];
-    	const fullFilePath = folderName + filePath;
-    	const fullFilePathWithCSV = fullFilePath + ".csv";
+    		const folderName = folderNames[index];
+    		const fullFilePath = folderName + filePath;
+    		const fullFilePathWithCSV = fullFilePath + ".csv";
 
-    	loadCSV(fullFilePathWithCSV, function(csv) {
-      	// File found, process the data and create the graph
-      		const GraphData = parseCSVForGraph(csv);
-      		createGraph(GraphData);
-      		csvLink.href = fullFilePathWithCSV;
-      		csvLink.style.display = "inline";
-    	}, 	function() {
+    		loadCSV(fullFilePathWithCSV, function(csv) {
+      		// File found, process the data and create the graph
+      			const GraphData = parseCSVForGraph(csv);
+      			createGraph(GraphData);
+      			csvLink.href = fullFilePathWithCSV;
+      			csvLink.style.display = "inline";
+    		}, 	function() {
       	// File not found in the current folder, try the next one
-      		loadCSVFromFolders(index + 1, filePath);
-    	});
+      			loadCSVFromFolders(index + 1, filePath);
+    		});
   	}
 
   	if (selectedValue != '') { 
-    	const filteredValues = data
-      		.filter(row => row[1] === dropdownModel.value)
-      		.filter(row => row[2] === selectedValue)
-      		.map(row => row[3]);
+    		const filteredValues = data
+      			.filter(row => row[1] === dropdownModel.value)
+      			.filter(row => row[2] === selectedValue)
+      			.map(row => row[3]);
 
-    	const linkValues = [...new Set(filteredValues)];
-    	const filePath = linkValues[0];
+    		const linkValues = [...new Set(filteredValues)];
+    		const filePath = linkValues[0];
 
    		if (filePath != '') {
-      		const folderNames = ['predictions/', 'predictions2/'];
-      		loadCSVFromFolders(0, filePath);
-    	} 	else {
-      		csvLink.style.display = "none";
+      			loadCSVFromFolders(0, filePath);
+    		} 	else {
+      			csvLink.style.display = "none";
     	}
   	} 	else {
-    	csvLink.style.display = "none";
+    		csvLink.style.display = "none";
   	}
 });
     
