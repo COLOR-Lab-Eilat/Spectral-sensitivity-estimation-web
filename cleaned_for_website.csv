@@ -1,5 +1,4 @@
 Manufacturer,Model&Make,Mark,Prediction
-CASIO,EX-FH100,NA,CASIO-EX-FH100.csv
 Canon,EOS 1000D,NA,Canon-EOS-1000D.csv
 Canon,EOS 100D,NA,Canon-EOS-100D.csv
 Canon,EOS 10D,NA,Canon-EOS-10D.csv
@@ -116,11 +115,6 @@ Canon,PowerShot SX1 IS,NA,Canon-PowerShot-SX1-IS.csv
 Canon,PowerShot SX50 HS,NA,Canon-PowerShot-SX50-HS.csv
 Canon,PowerShot SX60 HS,NA,Canon-PowerShot-SX60-HS.csv
 Canon,PowerShot SX70 HS,NA,Canon-PowerShot-SX70-HS.csv
-Casio,EX-F1,NA,Casio-EX-F1.csv
-Contax,N Digital,NA,Contax-N-Digital.csv
-DJI,FC3411,NA,DJI-FC3411.csv
-DJI,FC7303,NA,DJI-FC7303.csv
-DXO,ONE,NA,DXO-ONE.csv
 Epson,R-D1,NA,Epson-R-D1.csv
 Epson,R-D1s,NA,Epson-R-D1s.csv
 Epson,R-D1x,NA,Epson-R-D1x.csv
@@ -455,8 +449,6 @@ Nikon,Z 7,NA,Nikon-Z-7 (Case Conflict).csv
 Nikon,Z 7,II,Nikon-Z-7-2.csv
 Nikon,Z 9,NA,Nikon-Z-9.csv
 Nikon,Z fc,NA,Nikon-Z-fc.csv
-OM,Digital Solutions OM-1,NA,OM-Digital-Solutions-OM-1.csv
-OM,Digital Solutions OM-5,NA,OM-Digital-Solutions-OM-5.csv
 Olympus,AIR A01,NA,Olympus-AIR-A01.csv
 Olympus,C-5050Z,NA,Olympus-C-5050Z.csv
 Olympus,C-5060WZ,NA,Olympus-C-5060WZ.csv
@@ -578,8 +570,8 @@ Panasonic,DC-S5,NA,Panasonic-DC-S5.csv
 Panasonic,DC-ZS200,NA,Panasonic-DC-ZS200.csv
 Panasonic,DC-ZS70,NA,Panasonic-DC-ZS70.csv
 Panasonic,DC-ZS80,NA,Panasonic-DC-ZS80.csv
-Panasonic,DMC-CM1,NA,NA
-Panasonic,DMC-CM10,NA,NA
+Panasonic,DMC-CM1,NA,Panasonic-DMC-CM1.csv
+Panasonic,DMC-CM10,NA,Panasonic-DMC-CM10.csv
 Panasonic,DMC-FX150,NA,Panasonic-DMC-FX150.csv
 Panasonic,DMC-FZ100,NA,Panasonic-DMC-FZ100.csv
 Panasonic,DMC-FZ1000,NA,Panasonic-DMC-FZ1000.csv
@@ -635,8 +627,6 @@ Panasonic,DMC-ZS100,NA,Panasonic-DMC-ZS100.csv
 Panasonic,DMC-ZS40,NA,Panasonic-DMC-ZS40.csv
 Panasonic,DMC-ZS50,NA,Panasonic-DMC-ZS50.csv
 Panasonic,DMC-ZS60,NA,Panasonic-DMC-ZS60.csv
-Parrot,ANAFI Ai,NA,Parrot-ANAFI-Ai.csv
-Parrot,Anafi,NA,Parrot-Anafi.csv
 Pentax,*istD,NA,Pentax-*istD.csv
 Pentax,*istDL,NA,Pentax-*istDL.csv
 Pentax,*istDL2,NA,Pentax-*istDL2.csv
@@ -666,13 +656,13 @@ Phase,One IQ3 60MP,NA,Phase-One-IQ3-60MP.csv
 Phase,One IQ3 80MP,NA,Phase-One-IQ3-80MP.csv
 Phase,One IQ4 150MP,NA,Phase-One-IQ4-150MP.csv
 Phase,One P20,NA,Phase-One-P20.csv
-Phase,One P20+,NA,NA
+Phase,One P20+,NA,Phase-One-P20+.csv
 Phase,One P21,NA,Phase-One-P21.csv
-Phase,One P21+,NA,NA
+Phase,One P21+,NA,Phase-One-P21+.csv
 Phase,One P25,NA,Phase-One-P25.csv
-Phase,One P25+,NA,NA
+Phase,One P25+,NA,Phase-One-P25+.csv
 Phase,One P30,NA,Phase-One-P30.csv
-Phase,One P30+,NA,NA
+Phase,One P30+,NA,Phase-One-P30+.csv
 Phase,One P40+,NA,Phase-One-P40+.csv
 Phase,One P45,NA,Phase-One-P45.csv
 Phase,One P45+,NA,Phase-One-P45+.csv
@@ -683,14 +673,13 @@ Google,Pixel 3 XL-Google-google,NA,Pixel-3-XL-Google-google.csv
 Google,Pixel 3-Google-google,NA,Pixel-3-Google-google.csv
 Google,Pixel XL-Google-google,NA,Pixel-XL-Google-google.csv
 Google,Pixel-Google-google,NA,Pixel-Google-google.csv
-Pixii,Camera (A1571),NA,Pixii-Camera-(A1571).csv
-RICOH,GR A12 50mm F2.5 MACRO,NA,NA
+RICOH,GR A12 50mm F2.5 MACRO,NA,RICOH-GR-A12-50mm-F2.csv
 RICOH,GR,III,RICOH-GR-III.csv
 RICOH,GR,IIIx,RICOH-GR-IIIx.csv
-RICOH,GR LENS A12 28mm F2.5,NA,NA
+RICOH,GR LENS A12 28mm F2.5,NA,RICOH-GR-LENS-A12-28mm-F2.csv
 RICOH,GXR MOUNT A12,NA,RICOH-GXR-MOUNT-A12.csv
-RICOH,RICOH LENS A16 24-85mm F3.5-5.5,NA,NA
-RICOH,S10 24-72mm F2.5-4.4 VC,NA,NA
+RICOH,RICOH LENS A16 24-85mm F3.5-5.5,NA,RICOH-RICOH-LENS-A16-24-85mm-F3.csv
+RICOH,S10 24-72mm F2.5-4.4 VC,NA,RICOH-S10-24-72mm-F2.csv
 RICOH,THETA Z1,NA,RICOH-THETA-Z1.csv
 Ricoh,GR DIGITAL,III,NA
 Ricoh,GR DIGITAL,IV,NA
@@ -711,16 +700,16 @@ Samsung,Galaxy S20 Front Camera,NA,Samsung-Galaxy-S20-Front-Camera.csv
 Samsung,Galaxy S20 Rear Main Camera,NA,Samsung-Galaxy-S20-Rear-Main-Camera.csv
 Samsung,Galaxy S20 Ultra Front Camera,NA,Samsung-Galaxy-S20-Ultra-Front-Camera.csv
 Samsung,Galaxy S20 Ultra Rear Main Camera,NA,Samsung-Galaxy-S20-Ultra-Rear-Main-Camera.csv
-Samsung,Galaxy S20+ Front Camera,NA,NA
-Samsung,Galaxy S20+ Rear Main Camera,NA,NA
+Samsung,Galaxy S20+ Front Camera,NA,Samsung-Galaxy-S20+-Front-Camera.csv
+Samsung,Galaxy S20+ Rear Main Camera,NA,Samsung-Galaxy-S20+-Rear-Main-Camera.csv
 Samsung,Galaxy S21 Rear Main Camera,NA,Samsung-Galaxy-S21-Rear-Main-Camera.csv
 Samsung,Galaxy S21 Rear Wide Camera,NA,Samsung-Galaxy-S21-Rear-Wide-Camera.csv
 Samsung,Galaxy S21 Ultra Rear Main Camera,NA,Samsung-Galaxy-S21-Ultra-Rear-Main-Camera.csv
 Samsung,Galaxy S21 Ultra Rear Super Telephoto Camera,NA,Samsung-Galaxy-S21-Ultra-Rear-Super-Telephoto-Camera.csv
 Samsung,Galaxy S21 Ultra Rear Telephoto Camera,NA,Samsung-Galaxy-S21-Ultra-Rear-Telephoto-Camera.csv
 Samsung,Galaxy S21 Ultra Rear Wide Camera,NA,Samsung-Galaxy-S21-Ultra-Rear-Wide-Camera.csv
-Samsung,Galaxy S21+ Rear Main Camera,NA,NA
-Samsung,Galaxy S21+ Rear Wide Camera,NA,NA
+Samsung,Galaxy S21+ Rear Main Camera,NA,Samsung-Galaxy-S21+-Rear-Main-Camera.csv
+Samsung,Galaxy S21+ Rear Wide Camera,NA,Samsung-Galaxy-S21+-Rear-Wide-Camera.csv
 Samsung,Galaxy S22 Front Camera,NA,Samsung-Galaxy-S22-Front-Camera.csv
 Samsung,Galaxy S22 Rear Telephoto Camera,NA,Samsung-Galaxy-S22-Rear-Telephoto-Camera.csv
 Samsung,Galaxy S22 Rear Ultrawide Camera,NA,Samsung-Galaxy-S22-Rear-Ultrawide-Camera.csv
@@ -730,19 +719,19 @@ Samsung,Galaxy S22 Ultra Rear Super Telephoto Camera,NA,Samsung-Galaxy-S22-Ultra
 Samsung,Galaxy S22 Ultra Rear Telephoto Camera,NA,Samsung-Galaxy-S22-Ultra-Rear-Telephoto-Camera.csv
 Samsung,Galaxy S22 Ultra Rear Ultrawide Camera,NA,Samsung-Galaxy-S22-Ultra-Rear-Ultrawide-Camera.csv
 Samsung,Galaxy S22 Ultra Rear Wide Camera,NA,Samsung-Galaxy-S22-Ultra-Rear-Wide-Camera.csv
-Samsung,Galaxy S22+ Front Camera,NA,NA
+Samsung,Galaxy S22+ Front Camera,NA,Samsung-Galaxy-S22+-Front-Camera.csv
 Samsung,Galaxy S22+ Front Camera Adobe Standard,NA,Samsung-Galaxy-S22+-Front-Camera-Adobe-Standard.csv
-Samsung,Galaxy S22+ Rear Telephoto Camera,NA,NA
-Samsung,Galaxy S22+ Rear Ultrawide Camera,NA,NA
-Samsung,Galaxy S22+ Rear Wide Camera,NA,NA
+Samsung,Galaxy S22+ Rear Telephoto Camera,NA,Samsung-Galaxy-S22+-Rear-Telephoto-Camera.csv
+Samsung,Galaxy S22+ Rear Ultrawide Camera,NA,Samsung-Galaxy-S22+-Rear-Ultrawide-Camera.csv
+Samsung,Galaxy S22+ Rear Wide Camera,NA,Samsung-Galaxy-S22+-Rear-Wide-Camera.csv
 Samsung,Galaxy S6,NA,Samsung-Galaxy-S6.csv
 Samsung,Galaxy S6 Edge,NA,Samsung-Galaxy-S6-Edge.csv
 Samsung,Galaxy S7,NA,Samsung-Galaxy-S7.csv
 Samsung,Galaxy S7 Edge,NA,Samsung-Galaxy-S7-Edge.csv
 Samsung,Galaxy S8,NA,Samsung-Galaxy-S8.csv
-Samsung,Galaxy S8+,NA,NA
+Samsung,Galaxy S8+,NA,Samsung-Galaxy-S8+.csv
 Samsung,Galaxy S9,NA,Samsung-Galaxy-S9.csv
-Samsung,Galaxy S9+,NA,NA
+Samsung,Galaxy S9+,NA,Samsung-Galaxy-S9+.csv
 Samsung,Galaxy Z Fold3 Rear Main Camera,NA,Samsung-Galaxy-Z-Fold3-Rear-Main-Camera.csv
 Samsung,Galaxy Z Fold3 Rear Telephoto Camera,NA,Samsung-Galaxy-Z-Fold3-Rear-Telephoto-Camera.csv
 Samsung,Galaxy Z Fold3 Rear Ultrawide Camera,NA,Samsung-Galaxy-Z-Fold3-Rear-Ultrawide-Camera.csv
@@ -768,7 +757,6 @@ Samsung,NX3300,NA,Samsung-NX3300.csv
 Samsung,NX5,NA,Samsung-NX5.csv
 Samsung,NX500,NA,Samsung-NX500.csv
 Samsung,WB2000,NA,Samsung-WB2000.csv
-Skydio,2,NA,Skydio-2.csv
 Sony,DCZV1B,NA,Sony-DCZV1B.csv
 Sony,DSC-HX95,NA,Sony-DSC-HX95.csv
 Sony,DSC-HX99,NA,Sony-DSC-HX99.csv
@@ -906,8 +894,6 @@ Xiaomi,13 Rear Wide Camera,NA,Xiaomi-13-Rear-Wide-Camera.csv
 Xiaomi,Mi 11 Lite Front Camera,NA,Xiaomi-Mi-11-Lite-Front-Camera.csv
 Xiaomi,Mi 11 Lite Rear Ultrawide Camera,NA,Xiaomi-Mi-11-Lite-Rear-Ultrawide-Camera.csv
 Xiaomi,Mi 11 Lite Rear Wide Camera,NA,Xiaomi-Mi-11-Lite-Rear-Wide-Camera.csv
-YUNEEC,ION L1 Pro,NA,YUNEEC-ION-L1-Pro.csv
-ZEISS,ZX1,NA,ZEISS-ZX1.csv
 Apple,iPad13.1 back camera,NA,"iPad13,1-back-camera.csv"
 Apple,iPad13.10 back camera,NA,"iPad13,10-back-camera.csv"
 Apple,iPad13.11 back camera,NA,"iPad13,11-back-camera.csv"
