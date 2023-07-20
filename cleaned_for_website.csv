@@ -201,8 +201,8 @@ Fujifilm,XF1,NA,Fujifilm-XF1.csv
 Fujifilm,XF10,NA,Fujifilm-XF10.csv
 Fujifilm,XQ1,NA,Fujifilm-XQ1.csv
 Fujifilm,XQ2,NA,Fujifilm-XQ2.csv
-RICOH,GR,NA,NA
-RICOH,GR,II,NA
+Ricoh,GR,NA,NA
+Ricoh,GR,II,NA
 GoPro,HERO10 Black,NA,GoPro-HERO10-Black.csv
 GoPro,HERO7 Black,NA,GoPro-HERO7-Black.csv
 Google,Pixel 3 Front Standard Camera,NA,Google-Pixel-3-Front-Standard-Camera.csv
@@ -236,16 +236,16 @@ Google,Pixel 7 Ultrawide Camera,NA,Google-Pixel-7-Ultrawide-Camera.csv
 Google,Pixel 7 Wide Camera,NA,Google-Pixel-7-Wide-Camera.csv
 HMD,Global Nokia 9 PureView Front Camera,NA,HMD-Global-Nokia-9-PureView-Front-Camera.csv
 HMD,Global Nokia 9 PureView Rear Camera,NA,HMD-Global-Nokia-9-PureView-Rear-Camera.csv
-HUAWEI,Honor 20 Pro Rear Main Camera,NA,HUAWEI-Honor-20-Pro-Rear-Main-Camera.csv
-HUAWEI,Honor 20 Pro Rear Telephoto Camera,NA,HUAWEI-Honor-20-Pro-Rear-Telephoto-Camera.csv
-HUAWEI,Honor 20 Pro Rear Wide Camera,NA,HUAWEI-Honor-20-Pro-Rear-Wide-Camera.csv
-HUAWEI,Mate 10 Pro Rear Camera,NA,HUAWEI-Mate-10-Pro-Rear-Camera.csv
-HUAWEI,P30 Pro Rear Main Camera,NA,HUAWEI-P30-Pro-Rear-Main-Camera.csv
-HUAWEI,P30 Pro Rear Telephoto Camera,NA,HUAWEI-P30-Pro-Rear-Telephoto-Camera.csv
-HUAWEI,P30 Pro Rear Wide Camera,NA,HUAWEI-P30-Pro-Rear-Wide-Camera.csv
-HUAWEI,P30 Rear Main Camera,NA,HUAWEI-P30-Rear-Main-Camera.csv
-HUAWEI,P30 Rear Telephoto Camera,NA,HUAWEI-P30-Rear-Telephoto-Camera.csv
-HUAWEI,P30 Rear Wide Camera,NA,HUAWEI-P30-Rear-Wide-Camera.csv
+Huawei,Honor 20 Pro Rear Main Camera,NA,HUAWEI-Honor-20-Pro-Rear-Main-Camera.csv
+Huawei,Honor 20 Pro Rear Telephoto Camera,NA,HUAWEI-Honor-20-Pro-Rear-Telephoto-Camera.csv
+Huawei,Honor 20 Pro Rear Wide Camera,NA,HUAWEI-Honor-20-Pro-Rear-Wide-Camera.csv
+Huawei,Mate 10 Pro Rear Camera,NA,HUAWEI-Mate-10-Pro-Rear-Camera.csv
+Huawei,P30 Pro Rear Main Camera,NA,HUAWEI-P30-Pro-Rear-Main-Camera.csv
+Huawei,P30 Pro Rear Telephoto Camera,NA,HUAWEI-P30-Pro-Rear-Telephoto-Camera.csv
+Huawei,P30 Pro Rear Wide Camera,NA,HUAWEI-P30-Pro-Rear-Wide-Camera.csv
+Huawei,P30 Rear Main Camera,NA,HUAWEI-P30-Rear-Main-Camera.csv
+Huawei,P30 Rear Telephoto Camera,NA,HUAWEI-P30-Rear-Telephoto-Camera.csv
+Huawei,P30 Rear Wide Camera,NA,HUAWEI-P30-Rear-Wide-Camera.csv
 Hasselblad,100-20-Coated6,NA,Hasselblad-100-20-Coated6.csv
 Hasselblad,39-Coated,NA,Hasselblad-39-Coated.csv
 Hasselblad,50-15-Coated5,NA,Hasselblad-50-15-Coated5.csv
@@ -259,31 +259,31 @@ Konica,Minolta DiMAGE A2,NA,Konica-Minolta-DiMAGE-A2.csv
 Konica,Minolta DiMAGE A200,NA,Konica-Minolta-DiMAGE-A200.csv
 Konica,Minolta Maxxum 5D,NA,Konica-Minolta-Maxxum-5D.csv
 Konica,Minolta Maxxum 7D,NA,Konica-Minolta-Maxxum-7D.csv
-LEICA,CL,NA,LEICA-CL.csv
-LEICA,M (Typ 240),NA,LEICA-M-(Typ-240).csv
-LEICA,M (Typ 262),NA,LEICA-M-(Typ-262).csv
-LEICA,M-D (Typ 262),NA,LEICA-M-D-(Typ-262).csv
-LEICA,M10,NA,LEICA-M10.csv
-LEICA,M10-D,NA,LEICA-M10-D.csv
-LEICA,M10-P,NA,LEICA-M10-P.csv
-LEICA,M10-R,NA,LEICA-M10-R.csv
-LEICA,M11,NA,LEICA-M11.csv
-LEICA,Q (Typ 116),NA,LEICA-Q-(Typ-116).csv
-LEICA,Q2,NA,LEICA-Q2.csv
-LEICA,S (Typ 006),NA,LEICA-S-(Typ-006).csv
-LEICA,S (Typ 007),NA,LEICA-S-(Typ-007).csv
-LEICA,S3,NA,LEICA-S3.csv
-LEICA,SL (Typ 601),NA,LEICA-SL-(Typ-601).csv
-LEICA,SL2,NA,LEICA-SL2.csv
-LEICA,SL2-S,NA,LEICA-SL2-S.csv
-LEICA,T (Typ 701),NA,LEICA-T-(Typ-701).csv
-LEICA,TL,NA,LEICA-TL.csv
-LEICA,TL2,NA,LEICA-TL2.csv
-LEICA,X (Typ 113),NA,LEICA-X-(Typ-113).csv
-LEICA,X VARIO (Typ 107),NA,LEICA-X-VARIO-(Typ-107).csv
-LEICA,X-U (Typ 113),NA,LEICA-X-U-(Typ-113).csv
-LEICA,X1,NA,LEICA-X1.csv
-LEICA,X2,NA,LEICA-X2.csv
+Leica,CL,NA,LEICA-CL.csv
+Leica,M (Typ 240),NA,LEICA-M-(Typ-240).csv
+Leica,M (Typ 262),NA,LEICA-M-(Typ-262).csv
+Leica,M-D (Typ 262),NA,LEICA-M-D-(Typ-262).csv
+Leica,M10,NA,LEICA-M10.csv
+Leica,M10-D,NA,LEICA-M10-D.csv
+Leica,M10-P,NA,LEICA-M10-P.csv
+Leica,M10-R,NA,LEICA-M10-R.csv
+Leica,M11,NA,LEICA-M11.csv
+Leica,Q (Typ 116),NA,LEICA-Q-(Typ-116).csv
+Leica,Q2,NA,LEICA-Q2.csv
+Leica,S (Typ 006),NA,LEICA-S-(Typ-006).csv
+Leica,S (Typ 007),NA,LEICA-S-(Typ-007).csv
+Leica,S3,NA,LEICA-S3.csv
+Leica,SL (Typ 601),NA,LEICA-SL-(Typ-601).csv
+Leica,SL2,NA,LEICA-SL2.csv
+Leica,SL2-S,NA,LEICA-SL2-S.csv
+Leica,T (Typ 701),NA,LEICA-T-(Typ-701).csv
+Leica,TL,NA,LEICA-TL.csv
+Leica,TL2,NA,LEICA-TL2.csv
+Leica,X (Typ 113),NA,LEICA-X-(Typ-113).csv
+Leica,X VARIO (Typ 107),NA,LEICA-X-VARIO-(Typ-107).csv
+Leica,X-U (Typ 113),NA,LEICA-X-U-(Typ-113).csv
+Leica,X1,NA,LEICA-X1.csv
+Leica,X2,NA,LEICA-X2.csv
 LG,G7 ThinQ Front Camera,NA,LG-G7-ThinQ-Front-Camera.csv
 LG,G7 ThinQ Rear Main Camera,NA,LG-G7-ThinQ-Rear-Main-Camera.csv
 LG,G7 ThinQ Rear Wide Camera,NA,LG-G7-ThinQ-Rear-Wide-Camera.csv
