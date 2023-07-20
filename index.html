@@ -1,0 +1,605 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Trebuchet MS", "Trebuchet MS", "Trebuchet MS", Trebuchet MS, Trebuchet MS, "Trebuchet MS", sans-serif; 
+    font-weight:350;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-size:32px;
+    font-weight:350;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;   
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #00008B;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #483D8B;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+    5px 5px 0 0px #fff, /* The second layer */
+    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+    10px 10px 0 0px #fff, /* The third layer */
+    10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+    15px 15px 0 0px #fff, /* The fourth layer */
+    15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+    20px 20px 0 0px #fff, /* The fifth layer */
+    20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+    25px 25px 0 0px #fff, /* The fifth layer */
+    25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+  .paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+    0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+    5px 5px 0 0px #fff, /* The second layer */
+    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+    10px 10px 0 0px #fff, /* The third layer */
+    10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
+<html>
+<head>
+  <title>Spectral Sensitivity Estimation Without a Camera</title>
+  <meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+  <meta property="og:title" content="Spectral Sensitivity Estimation Without a Camera." />
+
+
+  <!-- Get from Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=""></script> 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-75863369-6');
+  </script>
+</head>
+
+<body>
+  <br>
+  <center>
+    <span style="font-size:30px"><b>Spectral Sensitivity Estimation Without a Camera</b></span>
+    <table align=center width=350px>
+      <table align=center width=350px>
+        <tr>
+          <td align=center width=100px>
+            <center>
+              <span style="font-size:18px"><a href="https://grigorysolomatov.github.io/"><u>Grigory Solomatov<u/></a></span>
+            </center>
+          </td>
+          <td align=center width=100px>
+            <center>
+              <span style="font-size:18px"><a href="https://www.deryaakkaynak.com/"><u>Derya Akkaynak</u></a></span>
+            </center>
+
+          </td>
+        </tr>
+        <br>
+
+      </table>
+      <table align=center width=250px>
+        <tr>
+          <td align=center width=120px>
+            <center>
+              <img class="round" style="width:800px" src="./resources/unis.png"/>
+            </center>
+          </td>
+
+          </td>
+        </tr>
+        <br>
+
+      <table align=center width=400px>
+        <tr>
+          <td align=center width=120px>
+            <center>
+              <span style="font-size:20px"><a href='./resources/Solomatov_Akkaynak_2023.pdf'><u>[Paper]</u></a></span>
+            </center>
+          </td>
+          <td align=center width=120px>
+            <center>
+              <span style="font-size:20px"><a href='https://github.com/COLOR-Lab-Eilat/Spectral-sensitivity-estimation'><u>[Code]</u></a></span><br>
+            </center>
+          </td>
+          <td align=center width=120px>
+            <center>
+              <span style="font-size:20px"><a href='link to poster'><u>[Poster]</u></a></span><br>
+            </center>
+
+          </td>
+          <td align=center width=120px>
+            <center>
+              <span style="font-size:20px"><a href="#camera-dataset-section"><u>[Dataset]</a></u>
+            </center> 
+
+          </td>
+        </tr>
+
+
+      </table>
+
+      </table>
+    </table>
+  </center>
+  <br>
+  <center>
+    <table align=center width=800px>
+      <tr>
+        <td width=400px>
+          <center>
+            <img class="round" style="width:800px" src="./resources/derya7752_with_a_camera_mounted_on_a_miniature_tripod_taking_a__196b55bc-3dbe-4917-89c3-da786fab0d59.png"/>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <table align=center width=850px>
+      <tr>
+        <td align = center style= "font-size: 10pt">
+          <br>
+          Each make and model of camera is characterized by its unique set of spectral sensitivities that define how that camera responds to light. Effectively, this means that different cameras will register a different set of RGB values for a given scene, even if they image the scene simultaneously. Knowing camera spectral responses can help standardize color capture, as well as simplify the solution of many problems in computer vision and related fields. Image credit: midjourney.
+        </td>
+      </tr>
+    </table>
+  </center>
+    <br>
+  <hr>
+
+  <table align=center width=850px>
+    <center><h1>Abstract</h1></center>
+    <tr>
+      <td>
+        A number of problems in computer vision and related fields would be mitigated if camera spectral sensitivities were known. As consumer cameras are not designed for high-precision visual tasks, manufacturers do not disclose spectral sensitivities. Their estimation requires a costly optical setup, which triggered researchers to come up with numerous indirect methods that aim to lower cost and complexity by using color targets. However, the use of color targets gives rise to new complications that make the estimation more difficult, and consequently, there currently exists no simple, low-cost, robust go-to method for spectral sensitivity estimation that non-specialized research labs can adopt. Furthermore, even if not limited by hardware or cost, researchers frequently work with imagery from multiple cameras that they do not have in their possession. To provide a practical solution to this problem, we propose a framework for spectral sensitivity estimation that not only does not require any hardware (including a color target), but also does not require physical access to the camera itself. Similar to other work, we formulate an optimization problem that minimizes a two-term objective function: a camera-specific term from a system of equations, and a universal term that bounds the solution space. Different than other work, we utilize publicly available high-quality calibration data to construct both terms. We use the colorimetric mapping matrices provided by the Adobe DNG Converter to formulate the camera-specific system of equations, and constrain the solutions using an autoencoder trained on a database of ground-truth curves. On average, we achieve reconstruction errors as low as those that can arise due to manufacturing imperfections between two copies of the same camera. We provide predicted sensitivities for more than 1,000 cameras that the Adobe DNG Converter currently supports, and discuss which tasks can become trivial when camera responses are available.
+      </td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+
+  <center><h1>Poster</h1></center>
+
+  <table align=center width=420px>
+    <center>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </center>
+  </table>
+  <table align=center width=600px>
+    <tr>
+      <td align=center width=600px>
+        <center>
+          <td><img class="round" style="width:600px" src="./resources/posterstock.png"/></td>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <table align=center width=850px>
+
+  </table>
+  <table align=center width=800px>
+    <br>
+    <tr><center>
+      <span style="font-size:20px">&nbsp;<a href='https://github.com/richzhang/webpage-template'><u>[Download]</u></a>
+      </center>
+    <br>
+    </span>
+  <hr>
+
+  <center><h1>Results</h1></center>
+<head>
+  <style>
+    .image-container {
+      display: flex;
+    }
+    .image-container .image-box {
+      flex: 1;
+      margin: 10px;
+      text-align: center;
+    } 
+    .image-container .image-box img {
+      max-width: 100%;
+      height: auto;
+    }
+    .image-container .image-caption {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body> 
+  <div class="image-container">
+    <div class="image-box">
+      <img src="./resources/ResultsFig.jpg" alt="Image 1">
+      <div class="image-caption">
+  </div>
+  <br> 
+</body> 
+    <hr>
+    <center><h1 id="camera-dataset-section">View Curves from our 1,000+ Camera Dataset</h1></center>
+    <div class="image-container">
+    <div class="image-box">
+      <img src="./resources/CameraSummary3.jpg" alt="Image 1">
+      <div class="image-caption">
+  </div>
+
+<head>
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1></h1>
+  <table>
+  <tr>
+    <td><label for="dropdownManufacturer">Manufacturer:</label></td>
+    <td>
+      <select id="dropdownManufacturer">
+        <option> </option>
+      </select>
+    </td>
+    <td></td>
+    <td><label for="dropdownModel">Model:</label></td>
+    <td>
+      <select id="dropdownModel">
+      </select>
+    </td>
+    <td></td>
+     <td><label for="dropdownMark">Mark:</label></td>
+    <td>
+      <select id="dropdownMark">
+      </select>
+    </td>
+     <td></td>
+    <td><a id="csvLink" style="display: none;"><u>[Download CSV File]</a></u>
+  </tr>
+</table>
+<canvas id="myChart"></canvas>
+
+  <script>
+    function loadCSV(file, callback) {
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            callback(xhr.responseText);
+          } else {
+            // Attempt to load the file from "predictions2" folder if not found in "predictions"
+            loadCSVFromPredictions2(file, callback);
+          }
+        }
+      };
+      xhr.open('GET', 'predictions/' + file, true);
+      xhr.send();
+    }
+      
+    function loadCSVFromPredictions2(file, callback) {
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            callback(xhr.responseText);
+          } else {
+            console.error('Failed to load CSV file.');
+          }
+        }
+      };
+      xhr.open('GET', 'predictions2/' + file, true);
+      xhr.send();
+    }
+    function parseCSV(csv) {
+      const lines = csv.split('\n');
+      const data = lines.slice(1).map(line => line.split(','));
+      return data;
+    }
+
+    function parseCSVForGraph(csv) {
+      const lines = csv.split("\n");
+      const data = {
+        wavelength: [],
+        red: [],
+        green: [],
+        blue: []
+      };
+
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line) {
+          const parts = line.split(",");
+          data.wavelength.push(parts[0]);
+          data.red.push(parseFloat(parts[1]));
+          data.green.push(parseFloat(parts[2]));
+          data.blue.push(parseFloat(parts[3]));
+        }
+      }
+
+      return data;
+    }
+
+    let myChart; // Declare a variable to hold the chart instance
+    let data = []; // Variable to store the loaded CSV data
+
+    function createGraph(data) {
+      const ctx = document.getElementById("myChart").getContext("2d");
+      if (myChart) {
+        // If there's an existing chart, destroy it before creating the new one
+        myChart.destroy();
+      }
+      myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: data.wavelength,
+          datasets: [
+            {
+              label: "red",
+              data: data.red,
+              borderColor: "rgba(255, 0, 0, 1)",
+              fill: false
+            },
+            {
+              label: "green",
+              data: data.green,
+              borderColor: "rgba(0, 255, 0, 1)",
+              fill: false
+            },
+            {
+              label: "blue",
+              data: data.blue,
+              borderColor: "rgba(0, 123, 255, 1)",
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function populateDropdown(dropdown, options) {
+      dropdown.innerHTML = '';
+      options.forEach(option => {
+        const optionElem = document.createElement('option');
+        optionElem.value = option;
+        optionElem.text = option;
+        dropdown.appendChild(optionElem);
+      });
+    }
+
+    function triggerChangeEvent(dropdownElement) {
+      const event = new Event('change', { bubbles: true });
+      dropdownElement.dispatchEvent(event);
+    }
+
+    function updateGraphAndLink() {
+      const selectedManufacturer = dropdownManufacturer.value;
+      const selectedModel = dropdownModel.value;
+      const selectedMark = dropdownMark.value;
+
+      if (selectedManufacturer && selectedModel && selectedMark) {
+        const filteredValues = data.filter(row => row[0] === selectedManufacturer && row[1] === selectedModel && row[2] === selectedMark).map(row => row[3]);
+        const linkValues = [...new Set(filteredValues)];
+        const filePath = linkValues[0];
+
+        if (filePath && filePath !== '') {
+          csvLink.href = 'predictions/' + filePath;
+          if (filePath.indexOf(".csv") === -1) {
+            loadCSV('predictions/' + filePath + ".csv", function(csv) {
+              const graphData = parseCSVForGraph(csv);
+              createGraph(graphData);
+              errorMessage.style.display = "none";
+            });
+          } else {
+            loadCSV('predictions/' + filePath, function(csv) {
+              const graphData = parseCSVForGraph(csv);
+              createGraph(graphData);
+              errorMessage.style.display = "none";
+            });
+          }
+          csvLink.style.display = "inline";
+        } else {
+          csvLink.style.display = "none";
+          errorMessage.style.display = "inline";
+        }
+      } else {
+        csvLink.style.display = "none";
+        errorMessage.style.display = "none";
+      }
+    }
+
+    const dropdownManufacturer = document.getElementById("dropdownManufacturer");
+    const dropdownModel = document.getElementById("dropdownModel");
+    const dropdownMark = document.getElementById("dropdownMark");
+    const csvLink = document.getElementById("csvLink");
+    const errorMessage = document.getElementById("errorMessage");
+
+    // Event listeners
+    dropdownManufacturer.addEventListener("change", function() {
+      const selectedValue = dropdownManufacturer.value;
+      const filteredValues = data.filter(row => row[0] === selectedValue).map(row => row[1]);
+      const uniqueManufacturerValues = [...new Set(filteredValues)];
+      populateDropdown(dropdownModel, uniqueManufacturerValues);
+      triggerChangeEvent(dropdownModel);
+      updateGraphAndLink();
+    });
+
+    dropdownModel.addEventListener("change", function() {
+      const selectedValue = dropdownModel.value;
+      const filteredValues = data.filter(row => row[1] === selectedValue).map(row => row[2]);
+      const uniqueModelValues = [...new Set(filteredValues)];
+      populateDropdown(dropdownMark, uniqueModelValues);
+      triggerChangeEvent(dropdownMark);
+      updateGraphAndLink();
+    });
+
+    dropdownMark.addEventListener("change", function() {
+      updateGraphAndLink();
+    });
+
+    // Load initial CSV data and populate the first dropdown
+    loadCSV('./cleaned_for_website.csv', function(csv) {
+      data = parseCSV(csv);
+      const firstColumn = data.map(row => row[0]);
+      const uniqueValues = [...new Set(firstColumn)];
+      populateDropdown(dropdownManufacturer, uniqueValues);
+      triggerChangeEvent(dropdownManufacturer);
+
+      // Call updateGraphAndLink after the initial data is loaded
+      updateGraphAndLink();
+    });
+  </script>
+</body>
+
+
+
+</tr>
+  <table align=center width=500px>
+    <br>
+    <tr>
+      <td align=center width=100px>
+      <center>
+        <span style="font-size:20px"><a href='./resources/csv.zip'><u>[All Estimated Curves]</u></a>
+        </span>
+      <td align=center width=100px>
+        <span style="font-size:20px"><a href='ground-truths.zip'><u>[Ground Truth Curves]</u></a>
+        </span>
+      </center>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+  <table align=center width=800px>
+    <center><h1>Paper and Supplementary Material</h1></center>
+    <tr>
+      <td><a href="./resources/Solomatov_Akkaynak_2023.pdf"><img class="layered-paper-big" style="height:175px" src="./resources/paperss.png"/></a></td>
+      <td><span style="font-size:14pt:  ">Solomotav, G. Akkaynak, D.<br>
+        <b>Spectral Sensitivity Estimation Without a Camera.</b><br>    
+        </span>
+      <td><a href="./resources/Solomatov_Akkaynak_2023_SUPP.pdf"><img class="layered-paper-big" style="height:175px" src="./resources/supmatss.png"/></a></td>
+      <td><span style="font-size:14pt:  ">Supplementary Material<br     
+
+    </tr>
+  </table>
+  <br>
+  <br>
+  <hr>
+  <table align=center width=800px>
+    <center><h1>Bibtex</h1></center>
+
+  <pre>
+  @inproceedings{Solomatov2023spectral,
+  author = {Grigory Solomatov and Derya Akkaynak},
+  title = {Spectral Sensitivity Estimation Without a Camera},
+  booktitle = {IEEE International Conference on Computational Photography (ICCP)},
+  year = {2023},
+  month = {July}
+  }
+    </pre>
+  <hr>
+  <br>
+
+
+  <table align=center width=900px>
+    <tr>
+      <td width=400px>
+        <left>
+          <center><h1>Acknowledgements</h1></center>
+          This page came live through a collaborative effort lead by Alice Vranka, with great help from Olena Kovalenko and Michael Leibovitch.
+
+          This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+
+
+        </left>
+      </td>
+    </tr>
+  </table>
+
+<br>
+</body>
+
+</html>
