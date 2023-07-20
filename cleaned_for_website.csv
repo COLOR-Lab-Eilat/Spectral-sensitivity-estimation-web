@@ -118,7 +118,7 @@ Canon,PowerShot SX70 HS,NA,Canon-PowerShot-SX70-HS.csv
 Epson,R-D1,NA,Epson-R-D1.csv
 Epson,R-D1s,NA,Epson-R-D1s.csv
 Epson,R-D1x,NA,Epson-R-D1x.csv
-FUJIFILM,X100T,NA,FUJIFILM-X100T.csv
+Fujifilm,X100T,NA,FUJIFILM-X100T.csv
 Fujifilm,FinePix E550,NA,Fujifilm-FinePix-E550.csv
 Fujifilm,FinePix E900,NA,Fujifilm-FinePix-E900.csv
 Fujifilm,FinePix F550EXR,NA,Fujifilm-FinePix-F550EXR.csv
@@ -201,8 +201,8 @@ Fujifilm,XF1,NA,Fujifilm-XF1.csv
 Fujifilm,XF10,NA,Fujifilm-XF10.csv
 Fujifilm,XQ1,NA,Fujifilm-XQ1.csv
 Fujifilm,XQ2,NA,Fujifilm-XQ2.csv
-Ricoh,GR,NA,NA
-Ricoh,GR,II,NA
+RICOH,GR,NA,NA
+RICOH,GR,II,NA
 GoPro,HERO10 Black,NA,GoPro-HERO10-Black.csv
 GoPro,HERO7 Black,NA,GoPro-HERO7-Black.csv
 Google,Pixel 3 Front Standard Camera,NA,Google-Pixel-3-Front-Standard-Camera.csv
@@ -358,10 +358,10 @@ Minolta,DiMAGE A1,NA,Minolta-DiMAGE-A1.csv
 Moto,G Power (2021) Front Camera,NA,Moto-G-Power-(2021)-Front-Camera.csv
 Moto,G Power (2021) Rear Macro Camera,NA,Moto-G-Power-(2021)-Rear-Macro-Camera.csv
 Moto,G Power (2021) Rear Wide Camera,NA,Moto-G-Power-(2021)-Rear-Wide-Camera.csv
-NIKON,D810,NA,NIKON-D810.csv
-NIKON,Z 30,NA,NIKON-Z-30.csv
-NIKON,Z 50,NA,NIKON-Z-50.csv
-NIKON,Z 7,NA,Nikon-Z-7 (Case Conflict).csv
+Nikon,D810,NA,NIKON-D810.csv
+Nikon,Z 30,NA,NIKON-Z-30.csv
+Nikon,Z 50,NA,NIKON-Z-50.csv
+Nikon,Z 7,NA,Nikon-Z-7 (Case Conflict).csv
 Nikon,1 AW1,NA,Nikon-1-AW1.csv
 Nikon,1 J1,NA,Nikon-1-J1.csv
 Nikon,1 J2,NA,Nikon-1-J2.csv
@@ -525,31 +525,31 @@ OnePlus,8 Front Camera,NA,OnePlus-8-Front-Camera.csv
 OnePlus,8 Pro Front Camera,NA,OnePlus-8-Pro-Front-Camera.csv
 OnePlus,8 Pro Rear Main Camera,NA,OnePlus-8-Pro-Rear-Main-Camera.csv
 OnePlus,8 Rear Main Camera,NA,OnePlus-8-Rear-Main-Camera.csv
-PENTAX,645D,NA,PENTAX-645D.csv
-PENTAX,645Z,NA,PENTAX-645Z.csv
-PENTAX,K-01,NA,PENTAX-K-01.csv
-PENTAX,K-1,NA,PENTAX-K-1.csv
-PENTAX,K-1,II,PENTAX-K-1-Mark-II.csv
-PENTAX,K-3,NA,PENTAX-K-3.csv
-PENTAX,K-3,II,PENTAX-K-3-II.csv
-PENTAX,K-3,III,PENTAX-K-3-Mark-III.csv
-PENTAX,K-5,NA,PENTAX-K-5.csv
-PENTAX,K-5,II,PENTAX-K-5-II.csv
-PENTAX,K-5,IIs,PENTAX-K-5-II-s.csv
-PENTAX,K-50,NA,PENTAX-K-50.csv
-PENTAX,K-500,NA,PENTAX-K-500.csv
-PENTAX,K-7,NA,PENTAX-K-7.csv
-PENTAX,K-70,NA,PENTAX-K-70.csv
-PENTAX,K-S1,NA,PENTAX-K-S1.csv
-PENTAX,K-S2,NA,PENTAX-K-S2.csv
-PENTAX,K-r,NA,PENTAX-K-r.csv
-PENTAX,K-x,NA,PENTAX-K-x.csv
-PENTAX,KF,NA,PENTAX-KF.csv
-PENTAX,KP,NA,PENTAX-KP.csv
-PENTAX,MX-1,NA,PENTAX-MX-1.csv
-PENTAX,Q,NA,PENTAX-Q.csv
-PENTAX,Q10,NA,PENTAX-Q10.csv
-PENTAX,Q7,NA,PENTAX-Q7.csv
+Pentax,645D,NA,PENTAX-645D.csv
+Pentax,645Z,NA,PENTAX-645Z.csv
+Pentax,K-01,NA,PENTAX-K-01.csv
+Pentax,K-1,NA,PENTAX-K-1.csv
+Pentax,K-1,II,PENTAX-K-1-Mark-II.csv
+Pentax,K-3,NA,PENTAX-K-3.csv
+Pentax,K-3,II,PENTAX-K-3-II.csv
+Pentax,K-3,III,PENTAX-K-3-Mark-III.csv
+Pentax,K-5,NA,PENTAX-K-5.csv
+Pentax,K-5,II,PENTAX-K-5-II.csv
+Pentax,K-5,IIs,PENTAX-K-5-II-s.csv
+Pentax,K-50,NA,PENTAX-K-50.csv
+Pentax,K-500,NA,PENTAX-K-500.csv
+Pentax,K-7,NA,PENTAX-K-7.csv
+Pentax,K-70,NA,PENTAX-K-70.csv
+Pentax,K-S1,NA,PENTAX-K-S1.csv
+Pentax,K-S2,NA,PENTAX-K-S2.csv
+Pentax,K-r,NA,PENTAX-K-r.csv
+Pentax,K-x,NA,PENTAX-K-x.csv
+Pentax,KF,NA,PENTAX-KF.csv
+Pentax,KP,NA,PENTAX-KP.csv
+Pentax,MX-1,NA,PENTAX-MX-1.csv
+Pentax,Q,NA,PENTAX-Q.csv
+Pentax,Q10,NA,PENTAX-Q10.csv
+Pentax,Q7,NA,PENTAX-Q7.csv
 Panasonic,DC-FZ1000M2,NA,Panasonic-DC-FZ1000M2.csv
 Panasonic,DC-FZ80,NA,Panasonic-DC-FZ80.csv
 Panasonic,DC-G100,NA,Panasonic-DC-G100.csv
@@ -684,8 +684,8 @@ RICOH,THETA Z1,NA,RICOH-THETA-Z1.csv
 Ricoh,GR DIGITAL,III,Ricoh-GR-DIGITAL-3.csv
 Ricoh,GR DIGITAL,IV,Ricoh-GR-DIGITAL-4.csv
 Ricoh,RICOH GX200,NA,Ricoh-RICOH-GX200.csv
-SAMSUNG,Galaxy S,II,NA
-SAMSUNG,GX20,NA,SAMSUNG-GX20.csv
+Samsung,Galaxy S,II,NA
+Samsung,GX20,NA,SAMSUNG-GX20.csv
 SIGMA,fp,NA,SIGMA-fp.csv
 SIGMA,fp L,NA,SIGMA-fp-L.csv
 Samsung,EX1,NA,Samsung-EX1.csv
